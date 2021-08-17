@@ -1,0 +1,21 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Preço</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Excluir</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.id}}</td>
+            <td>{{product.name}}</td>
+            <td>R$&nbsp;{{product.preco}}</td>
+            <td><a routerLink="/product/product-update/{{product.id}}"><mat-icon style="color: blue;">edit</mat-icon></a></td>
+            <td><a routerLink="/product/product-delete/{{product.id}}"><mat-icon style="color: red;">delete</mat-icon></a></td>
+        </tr>
+        <tr>
+    </tbody>
+</table>

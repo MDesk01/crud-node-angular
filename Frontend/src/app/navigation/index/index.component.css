@@ -1,0 +1,10 @@
+.sidenav{
+    position: fixed;
+    margin-top: 2.55%;
+}
+.header{
+    background-color: #e63946;
+    color: white;
+    position: fixed;
+    z-index: 5;
+}
