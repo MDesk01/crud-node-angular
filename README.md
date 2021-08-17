@@ -1,4 +1,5 @@
 # CRUD feito em Angular v.12 + node.js
+## **instruções:**
 Pré-requisitos para executar:
 1. instalar vscode
 2. instalar node.js e angular cli
