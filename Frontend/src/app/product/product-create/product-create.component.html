@@ -3,12 +3,14 @@
     <form>
         <mat-form-field>
             <!--pegando o nome do produto aqui-->
-            <input matInput  placeholder="Nome aqui" [(ngModel)]="product.name" name="name" pattern="[A-Za-z]" required/>
+
+            <input matInput type="text" placeholder="Nome aqui" [(ngModel)]="product.name" name="name"
+                pattern="[A-Za-z]" required />
         </mat-form-field>
-<br>
+        <br>
         <mat-form-field>
             <!--pegando o preco do produto-->
-            <input matInput  placeholder="Preço (R$)" [(ngModel)]="product.preco" name="preco" required/>
+            <input matInput placeholder="Preço (R$)" [(ngModel)]="product.preco" name="preco" required />
         </mat-form-field>
     </form>
 

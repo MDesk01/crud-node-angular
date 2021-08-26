@@ -13,6 +13,7 @@ export class ProductCreateComponent implements OnInit {
   constructor(private productService: ProductService, private router: Router) { } //declarando que ira usar o service e o roteamento do angular
 
   //atributos do produto
+  //cria-se um vetor
   product: Product = {
     name: '',
     preco: 0,
@@ -24,10 +25,10 @@ export class ProductCreateComponent implements OnInit {
 
   //método para criar o produto
   createProduct(): void {
-    this.productService.create(this.product).subscribe(() => {
-      this.productService.showMessage('Produto Criado com sucesso!') //mensagem de sucesso
-      this.router.navigate(['product-crud']) //retorna para a página product-crud
-    })
+      this.productService.create(this.product).subscribe(() => { //Cria o produto
+        this.productService.showMessage('Produto Criado com sucesso!') //mensagem de sucesso
+        this.router.navigate(['product-crud']) //retorna para a página product-crud, após a criação do produto
+      })
   } //fim do método de criar produto
 
   //botao de cancelar
